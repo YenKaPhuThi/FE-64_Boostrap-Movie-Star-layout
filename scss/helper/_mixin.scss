@@ -9,8 +9,18 @@
   }
 }
 
+// Begin Font Weight
+$fontWeightList: 300, 400, 700;
+
+@each $number in $fontWeightList {
+  .fw-#{$number} {
+    font-weight: $number !important;
+  }
+}
+// End Font Weight
+
 // Begin Margin & Padding
-$numberList: 3, 20, 50;
+$numberList: 3, 10, 20, 50;
 
 @each $number in $numberList {
   .py-#{$number} {
@@ -23,3 +33,13 @@ $numberList: 3, 20, 50;
   }
 }
 // End Margin & Padding
+
+// Begin Letter Spacing
+$letterList: 1, 2, 3;
+
+@each $number in $letterList {
+  .letter-spacing-#{$number} {
+    letter-spacing: $number/10 + rem !important;
+  }
+}
+// End Letter Spacing

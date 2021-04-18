@@ -2,12 +2,26 @@
 .text-primary {
   color: $color-primary !important;
 }
+
+.text-tundora {
+  color: $color-tundora !important;
+}
 // End Text Color
 
 // Begin Font Size
 .fs-13 {
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+
+.fs-23 {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+}
+
+.fs-46 {
+  font-size: 4.6rem;
+  line-height: 6.5rem;
 }
 // End Font Size
 
@@ -16,6 +30,13 @@
   font-weight: 500;
 }
 // End Font Weight
+
+// Begin Section
+.section {
+  padding: 5rem 0;
+}
+// End Section
+
 
 // Begin Link 
 a.link-primary {

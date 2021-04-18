@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto condensed', sans-serif;
   font-size: 1.6rem;
   line-height: 2.2rem;
+  font-weight: 300;
 }
 
 dl, ol, ul {
@@ -27,8 +28,16 @@ a:focus {
   outline: none;
 }
 
+p {
+  margin: 0;
+}
+
 .text-primary {
   color: #ec7532 !important;
+}
+
+.text-tundora {
+  color: #4a4a4a !important;
 }
 
 .fs-13 {
@@ -36,8 +45,22 @@ a:focus {
   line-height: 1.8rem;
 }
 
+.fs-23 {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+}
+
+.fs-46 {
+  font-size: 4.6rem;
+  line-height: 6.5rem;
+}
+
 .fw-medium {
   font-weight: 500;
+}
+
+.section {
+  padding: 5rem 0;
 }
 
 a.link-primary {
@@ -112,6 +135,18 @@ a.link-primary i {
   margin: 0;
 }
 
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
 .py-3 {
   padding-top: 0.3rem !important;
   padding-bottom: 0.3rem !important;
@@ -119,6 +154,15 @@ a.link-primary i {
 
 .mt-3 {
   margin-top: 0.3rem !important;
+}
+
+.py-10 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.mt-10 {
+  margin-top: 1rem !important;
 }
 
 .py-20 {
@@ -139,7 +183,19 @@ a.link-primary i {
   margin-top: 5rem !important;
 }
 
-footer {
+.letter-spacing-1 {
+  letter-spacing: 0.1rem !important;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.2rem !important;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 0.3rem !important;
+}
+
+.footer {
   background-color: #101010;
   padding: 7.5rem 0 0;
 }

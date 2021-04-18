@@ -1,0 +1,25 @@
+// Begin Heading
+@for $heading-size from 6 through 1 {
+  .heading-#{$heading-size} {
+    font-size: 1.2rem + $heading-size / 5;
+    line-height: 1.8rem + $heading-size / 5;
+    letter-spacing: .2rem;
+
+    margin: 0;
+  }
+}
+
+// Begin Margin & Padding
+$numberList: 3, 20, 50;
+
+@each $number in $numberList {
+  .py-#{$number} {
+    padding-top: $number/10 + rem !important;
+    padding-bottom: $number/10 + rem !important;
+  }
+
+  .mt-#{$number} {
+    margin-top: $number/10 + rem !important;
+  }
+}
+// End Margin & Padding

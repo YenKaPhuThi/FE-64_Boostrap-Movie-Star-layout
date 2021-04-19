@@ -10,7 +10,7 @@
 }
 
 // Begin Font Weight
-$fontWeightList: 300, 400, 700;
+$fontWeightList: 300, 400, 500, 700;
 
 @each $number in $fontWeightList {
   .fw-#{$number} {

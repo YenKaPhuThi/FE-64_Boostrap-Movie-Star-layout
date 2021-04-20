@@ -1,0 +1,17 @@
+.bubble {
+  color: $color-white;
+  font-size: 1.3rem;
+  line-height: 3.3rem;
+  font-weight: 700;
+  text-align: center;
+  
+  display: inline-block;
+
+  border-radius: 50%;
+  background: $color-tundora;
+
+  width: 3.3rem;
+  height: 3.3rem;
+
+  margin-left: .5rem;
+}

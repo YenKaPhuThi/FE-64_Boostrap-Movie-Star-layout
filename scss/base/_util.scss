@@ -9,9 +9,19 @@
 // End Text Color
 
 // Begin Font Size
+.fs-12 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
 .fs-13 {
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+
+.fs-14 {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .fs-23 {
@@ -30,36 +40,6 @@
   padding: 5rem 0;
 }
 // End Section
-
-
-// Begin Link 
-a.link-primary {
-  color: $color-white;
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-  letter-spacing: .15rem;
-
-  &:hover {
-    color: $color-primary-light;
-    text-decoration: none;
-
-    i {
-      color: $color-primary-light;
-    }
-  }
-
-  &:visited {
-    color: $color-white;
-    text-decoration: underline;
-  }
-
-  i {
-    color: rgba(255,255,255,.3);
-
-    min-width: 2.5rem;
-  }
-}
-// End Link
 
 // Begin Border
 .br-t-grey {

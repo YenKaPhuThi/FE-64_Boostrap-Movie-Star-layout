@@ -1,0 +1,57 @@
+// Begin Link
+%link-ext {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.link {
+  display: inline-block;
+
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  letter-spacing: .15rem;
+
+  color: $color-white;
+    
+  &:hover {
+    color: $color-primary-light !important;
+    text-decoration: none;
+
+    i {
+      color: $color-primary-light;
+    }
+  }
+
+  &:visited {
+    color: $color-white;
+    text-decoration: underline !important;
+  }
+
+  i {
+    color: rgba(255,255,255,.3);
+
+    min-width: 2.5rem;
+  }
+}
+
+.link-ext {
+  color: $color-primary;
+  @extend %link-ext;
+
+  &:hover {
+    color: $color-black;
+  }
+}
+
+.link-ext-light {
+  color: $color-primary;
+  @extend %link-ext;
+
+  &:hover {
+    color: $color-primary-light;
+  }
+}
+// End Link

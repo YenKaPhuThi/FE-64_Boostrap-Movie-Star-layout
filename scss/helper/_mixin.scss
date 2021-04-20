@@ -1,8 +1,10 @@
 // Begin Heading
 @for $heading-size from 6 through 1 {
   .heading-#{$heading-size} {
+    color: $color-black;
     font-size: 1.2rem + $heading-size / 5;
     line-height: 1.8rem + $heading-size / 5;
+    font-weight: 300;
     letter-spacing: .2rem;
 
     margin: 0;
@@ -28,8 +30,22 @@ $numberList: 3, 10, 20, 50;
     padding-bottom: $number/10 + rem !important;
   }
 
+  .mx-#{$number} {
+    margin-left: $number/10 + rem !important;
+    margin-right: $number/10 + rem !important;
+  }
+
+  .my-#{$number} {
+    margin-top: $number/10 + rem !important;
+    margin-bottom: $number/10 + rem !important;
+  }
+
   .mt-#{$number} {
     margin-top: $number/10 + rem !important;
+  }
+
+  .mb-#{$number} {
+    margin-bottom: $number/10 + rem !important;
   }
 }
 // End Margin & Padding
@@ -43,3 +59,15 @@ $letterList: 1, 2, 3;
   }
 }
 // End Letter Spacing
+
+// Begin Border
+// BEGIN BORDERS //
+@mixin border-default($border-color: $color-light-l04, $border-width: 1px, $radius: $border-radius-md) {
+  border: $border-width solid $border-color;
+  border-radius: $radius;
+}
+
+.b-r-10 {
+  border-radius: 1rem;
+}
+// End Border

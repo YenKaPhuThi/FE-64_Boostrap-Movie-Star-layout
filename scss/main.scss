@@ -1,5 +1,17 @@
-@import "./base/reset";
+// @Variables
 @import "./helper/variable";
+
+// @Reset
+@import "./base/reset";
+
+// @Util
 @import "./base/util";
+
+// @Mixin
 @import "./helper/mixin";
-@import "./layout/footer";
+
+// @Components
+@import "./components/all";
+
+// @Pages
+@import "./layout/home/all"

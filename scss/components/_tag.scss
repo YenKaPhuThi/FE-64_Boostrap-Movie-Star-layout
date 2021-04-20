@@ -1,0 +1,19 @@
+.tag {
+  color: $color-secondary;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+
+  border: 0;
+  border-radius: .5rem;
+  background-color: $color-alto;
+  
+  display: inline-block;
+
+  padding: .7rem 1rem;
+  margin: 0 0 0 0.5rem;
+
+  &.tag-blur {
+    opacity: .5;
+  }
+}

@@ -281,6 +281,10 @@ p {
   border-radius: 1rem;
 }
 
+.br-dot-l-white {
+  border-left: 0.1rem dotted #fff;
+}
+
 .link-ext, .link-ext-light {
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -363,7 +367,63 @@ p {
   opacity: .5;
 }
 
+.btn.btn-icon i {
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 600;
+}
+
 .footer {
   background-color: #101010;
   padding: 7.5rem 0 0;
 }
+
+/* Begin Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-dark {
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  padding: 2rem 2.4rem;
+  position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: .2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  transition: all .25s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 2rem 0 #b3a084;
+}
+
+/* End Header */

@@ -1,0 +1,13 @@
+// Begin Button
+.btn {
+  &.btn-icon {
+    i {
+      color: $color-white;
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: 600;
+
+    }
+  }
+}
+// End Button

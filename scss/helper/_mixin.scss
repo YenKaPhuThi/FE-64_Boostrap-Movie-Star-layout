@@ -70,4 +70,8 @@ $letterList: 1, 2, 3;
 .b-r-10 {
   border-radius: 1rem;
 }
+
+.br-dot-l-white {
+  border-left: .1rem dotted $color-white;
+}
 // End Border

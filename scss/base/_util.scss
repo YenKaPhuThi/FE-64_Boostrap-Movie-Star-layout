@@ -3,6 +3,10 @@
   color: $color-primary !important;
 }
 
+.text-primary-light {
+  color: $color-primary-light !important;
+}
+
 .text-tundora {
   color: $color-tundora !important;
 }
@@ -32,6 +36,11 @@
 .fs-46 {
   font-size: 4.6rem;
   line-height: 6.5rem;
+}
+
+.fs-52 {
+  font-size: 5.2rem;
+  line-height: 7.2rem;
 }
 // End Font Size
 

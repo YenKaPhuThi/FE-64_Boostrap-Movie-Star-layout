@@ -29,6 +29,13 @@
       crossorigin="anonymous"
     />
 
+    <!-- Venobox -->
+    <link rel="stylesheet" href="./libs/venobox/venobox.min.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -38,7 +45,7 @@
       This is Movie star page, I'M IN PROGRESS IMPLEMENT IT
       <header class="header">
         <div class="container">
-          <div class="header-info text-right">
+          <div class="text-right">
             <a href="tel:0330 123 4567" class="text-white">
               <i class="fas fa-phone-alt mr-2"></i>
               <span class="fw-700">0330 123 4567</span>
@@ -77,6 +84,69 @@
           </nav>
         </div>
       </header>
+      <section id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="container">
+          <ul class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#carousel" data-slide-to="1">2</li>
+            <li data-target="#carousel" data-slide-to="2">3</li>
+          </ul>
+        </div>
+        <div class="carousel-inner text-white">
+          <div class="carousel-item carousel-1 active">
+            <div class="container">
+              <p class="fs-14 text-primary-light text-uppercase letter-spacing-2">Action, Adventure, Fantasy</p>
+              <h1 class="fs-52 fw-300">End of the World: Part II
+              </h1>
+              <p class="mt-10">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.
+              </p>
+              <div class="mt-20">
+                <a class="btn btn-primary venobox" data-vbtype="video" href="https://youtu.be/RhFMIRuHAL4">
+                  <i class="fas fa-play"></i>
+                  <span>Play trailer</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-2 active">
+            <div class="container">
+              <p class="fs-14 text-primary-light text-uppercase letter-spacing-2">Action, Adventure, Fantasy</p>
+              <h1 class="fs-52 fw-300">End of the World: Part II
+              </h1>
+              <p class="mt-10">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.
+              </p>
+              <div class="mt-20">
+                <a class="btn btn-primary venobox" data-vbtype="video" href="https://youtu.be/RhFMIRuHAL4">
+                  <i class="fas fa-play"></i>
+                  <span>Play trailer</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-3 active">
+            <div class="container">
+              <p class="fs-14 text-primary-light text-uppercase letter-spacing-2">Action, Adventure, Fantasy</p>
+              <h1 class="fs-52 fw-300">End of the World: Part II
+              </h1>
+              <p class="mt-10">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.
+              </p>
+              <div class="mt-20">
+                <a class="btn btn-primary venobox" data-vbtype="video" href="https://youtu.be/RhFMIRuHAL4">
+                  <i class="fas fa-play"></i>
+                  <span>Play trailer</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </section>
       <section class="schedule section">
         <div class="container">
           <div class="row">
@@ -219,6 +289,97 @@
         </div>
       </footer>
     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Main -->
+    <script>
+      $(document).ready(function(){
+        $('.venobox').venobox();
+
+        $('.js-new-in-list').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      
+        $('.js-comming-soon-list').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+    
+    <!-- Venobox -->
+    <script src="./libs/venobox/venobox.min.js"></script>
+
+    <!-- Slick -->
+    <script src="./libs/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -66,6 +66,10 @@ p {
   color: #ec7532 !important;
 }
 
+.text-primary-light {
+  color: #fbbd61 !important;
+}
+
 .text-tundora {
   color: #4a4a4a !important;
 }
@@ -93,6 +97,11 @@ p {
 .fs-46 {
   font-size: 4.6rem;
   line-height: 6.5rem;
+}
+
+.fs-52 {
+  font-size: 5.2rem;
+  line-height: 7.2rem;
 }
 
 .section {
@@ -374,9 +383,40 @@ p {
   font-weight: 600;
 }
 
-.footer {
-  background-color: #101010;
-  padding: 7.5rem 0 0;
+.btn.btn-primary {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  padding: 1.2rem 1.4rem;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  border: 0;
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.btn-primary::after {
+  content: '';
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -10%;
+  top: 0;
+  transform: skew(30deg);
+  transition: all .5s;
+}
+
+.btn.btn-primary:hover::after {
+  width: 120%;
+}
+
+.btn.btn-primary i, .btn.btn-primary span {
+  z-index: 1;
+  position: relative;
 }
 
 /* Begin Header */
@@ -427,3 +467,42 @@ p {
 }
 
 /* End Header */
+.carousel-item {
+  background-size: over;
+  background-clip: border-box;
+  height: 60rem;
+  padding: 25rem 0 0;
+}
+
+.carousel-item.carousel-1 {
+  background: url("./../../images/hero-1.jpg") no-repeat center center;
+}
+
+.carousel-item.carousel-2 {
+  background: url("./../../images/hero-2.jpg") no-repeat center center;
+}
+
+.carousel-item.carousel-3 {
+  background: url("./../../images/hero-3.jpg") no-repeat center center;
+}
+
+.carousel-indicators {
+  justify-content: flex-start;
+}
+
+.carousel-indicators li {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: .2rem solid #fff;
+  border-radius: 50%;
+}
+
+.carousel-indicators li.active {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #101010;
+  padding: 7.5rem 0 0;
+}
